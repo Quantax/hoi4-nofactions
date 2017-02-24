@@ -1,0 +1,26 @@
+﻿# Initiate namespace
+add_namespace = nofactions
+
+# Event
+country_event = {
+	id = nofactions.1
+	title = nofactions.1.t
+	desc = nofactions.1.d
+	picture = nofactions
+	
+	# Fire the event daily
+	#is_triggered_only = yes
+
+	# Event pop is mainly for debugging so hidden by default
+	hidden = yes
+	
+	# Every time the event triggers loop through countries and on faction leaders dismantle faction
+	immediate = {
+		every_country = {
+			limit = { is_faction_leader = yes }
+				dismantle_faction = yes 
+				set_rule = { can_create_factions = no }
+		}
+	}
+	
+	option = { name = nofactions.1.option }

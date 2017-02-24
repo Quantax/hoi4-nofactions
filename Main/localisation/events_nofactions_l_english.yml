@@ -1,0 +1,4 @@
+﻿l_english:
+ nofactions.1.t:0 "Dismantle faction"
+ nofactions.1.d:0 "This is a debug message. You should not be seeing this. If you are, report it on the mods Steam Workshop page, please. ROOT: [Root.GetName], FROM: [From.GetName]"
+ nofactions.1.option:0 "OK"
