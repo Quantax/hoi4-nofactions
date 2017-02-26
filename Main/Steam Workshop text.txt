@@ -1,8 +1,9 @@
 [b]Update 7 is a MAJOR rework of the mod! Now compatible with just about any other mod, even total conversions![/b] However, be aware that balance issues and/or other strange things can happen you remove factions from various mods.
+Updating from Update 6 to Update 7 (or HOI 1.3.2 to 1.3.3) might not be fully compatible, new game is recommended!
 
 This mod removes all starting factions on game start and sets "cannot join factions" rule for all countries. Factions can still be created from focuses and events but [u]they will be dismantled the next day[/u]. I know this not a perfect solution but, thanks to Paradox's inconsistent way of handling on_action triggers, it's currently the best way to achieve maximum compatibility with other mods.
 
-Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen.
+Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen. However, all war participants will capitulate separately since there is no faction to host GIEs (goverment-in-exile).
 
 Game mechanics, focuses, events and other things that rely on factions (being a member, being a leader, etc.) are essentially non-functional. I might later make an addon mod which rebalances and 'fixes' aforementioned things in vanilla.
 

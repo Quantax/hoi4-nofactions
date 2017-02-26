@@ -1,4 +1,4 @@
-name="No Factions"
+﻿name="No Factions"
 path="mod/no_factions/"
 tags={
 	"Gameplay"
