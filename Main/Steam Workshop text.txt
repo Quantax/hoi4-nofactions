@@ -2,7 +2,7 @@ Factions no more! Or just remove starting factions.
 
 [b]Update 8 allows you the choose whether to disable all or just dismantle starting factions.[/b]
 
-This mod removes all starting factions on game start and you can disable all further faction creation.
+This mod removes all starting factions on game start and you can disable all further faction creation. You'll get a pop-up asking you to choose when you start a new game.
 
 If you choose to disable all factions, they can still be created from focuses and events but [u]they will be dismantled the next day[/u]. I know this not a perfect solution but, thanks to Paradox's inconsistent way of handling on_action triggers, it's currently the best way to achieve maximum compatibility with other mods. Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen. However, all war participants will capitulate separately since there is no faction to host GIEs (goverment-in-exile).
 

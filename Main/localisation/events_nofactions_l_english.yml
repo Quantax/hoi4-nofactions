@@ -3,6 +3,7 @@
  nofactions.1.d:0 "Would you like to only dismantle starting factions or disable factions altogether?"
  nofactions.1.a:0 "Dismantle starting factions only"
  nofactions.1.b:0 "Disable all factions"
+ nofactions.1.c:0 "Actually, nevermind, keep the factions"
  nofactions.2.t:0 "Dismantle faction"
  nofactions.2.d:0 "This is a debug message. You should not be seeing this. If you are, report it on the mods Steam Workshop page, please. ROOT: [Root.GetName], FROM: [From.GetName]"
  nofactions.2.option:0 "OK"

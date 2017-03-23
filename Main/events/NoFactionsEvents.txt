@@ -17,6 +17,7 @@ country_event = {
 		hidden_effect = {
 			# Loop through every country
 			every_country = {
+			
 				# Remove existing factions
 				dismantle_faction = yes
 			}
@@ -45,6 +46,8 @@ country_event = {
 			}
 		}
 	}
+	
+	option = { name = nofactions.1.c }
 }
 	
 	
