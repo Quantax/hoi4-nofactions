@@ -1,17 +1,10 @@
+# On startup, trigger the dialogue for human player only
 on_actions = {
 	on_startup = {	
 		effect = {
-			# Loop through every country
 			every_country = {
-				# Remove existing factions
-				dismantle_faction = yes 
-			
-				# Disable faction creation and joining
-				set_rule = { 
-					can_join_factions = no 
-					can_create_factions = no
-				}
-			}
+				limit = { is_ai = no }
+					country_event = nofactions.1
 		}
 	}
 }

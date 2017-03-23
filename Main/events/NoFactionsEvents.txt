@@ -1,11 +1,58 @@
 ﻿# Initiate namespace
 add_namespace = nofactions
 
-# Event
+
 country_event = {
 	id = nofactions.1
 	title = nofactions.1.t
 	desc = nofactions.1.d
+	picture = nofactions
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	# Option 1: Only remove starting factions
+	option = { 
+		name = nofactions.1.a
+		hidden_effect = {
+			# Loop through every country
+			every_country = {
+				# Remove existing factions
+				dismantle_faction = yes
+			}
+		}
+	}
+	
+	# Option 2: Disable all factions
+	option = {
+		name = nofactions.1.b
+		
+		# Set global flag to trigger dismantling event 
+		set_global_flag = nofactions_yes
+		
+		hidden_effect = {
+			# Loop through every country
+			every_country = {
+			
+				# Remove existing factions
+				dismantle_faction = yes
+				
+				# Disable faction creation and joining via diplomacy
+				set_rule = { 
+					can_join_factions = no 
+					can_create_factions = no
+				}
+			}
+		}
+	}
+}
+	
+	
+# Event
+country_event = {
+	id = nofactions.2
+	title = nofactions.2.t
+	desc = nofactions.2.d
 	picture = nofactions
 	
 	# The event fires daily
@@ -13,6 +60,8 @@ country_event = {
 
 	# Event popup is mainly for debugging so hidden by default
 	hidden = yes
+	
+	trigger = { has_global_flag = nofactions_yes }
 	
 	# Every time the event triggers loop through countries and on faction leaders dismantle faction
 	immediate = {
@@ -23,5 +72,6 @@ country_event = {
 		}
 	}
 	
-	option = { name = nofactions.1.option }
+	option = { name = nofactions.2.option }
 }
+
