@@ -1,4 +1,4 @@
-Factions no more! Or just remove starting factions.
+Factions no more! Or just remove starting factions. Compatible with total conversions.
 
 [b]Update 8 allows you the choose whether to disable all or just dismantle starting factions.[/b]
 

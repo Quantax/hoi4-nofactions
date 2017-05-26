@@ -1,18 +1,17 @@
 ﻿# Initiate namespace
 add_namespace = nofactions
 
-
 country_event = {
 	id = nofactions.1
-	title = nofactions.1.t
-	desc = nofactions.1.d
+	title = nofactions.1.title
+	desc = nofactions.1.desc
 	picture = nofactions
 	
-	fire_only_once = yes
+#	fire_only_once = yes
 	is_triggered_only = yes
 	
 	# Option 1: Only remove starting factions
-	option = { 
+	option = {
 		name = nofactions.1.a
 		hidden_effect = {
 			# Loop through every country
@@ -24,9 +23,15 @@ country_event = {
 		}
 	}
 	
-	# Option 2: Disable all factions
+	# Option 2: Trigger new event to dismantle selected factions
 	option = {
 		name = nofactions.1.b
+		hidden_effect = { country_event = { id = nofactions.3 } }
+	}
+	
+	# Option 3: Disable all factions
+	option = {
+		name = nofactions.1.c
 		
 		# Set global flag to trigger dismantling event 
 		set_global_flag = nofactions_yes
@@ -47,15 +52,16 @@ country_event = {
 		}
 	}
 	
-	option = { name = nofactions.1.c }
+	# Option 4: Don't do anything
+	option = { name = nofactions.1.d }
 }
 	
 	
-# Event
+# Faction Dismantling Event.
 country_event = {
 	id = nofactions.2
-	title = nofactions.2.t
-	desc = nofactions.2.d
+	title = nofactions.2.title
+	desc = nofactions.2.desc
 	picture = nofactions
 	
 	# The event fires daily
@@ -78,3 +84,137 @@ country_event = {
 	option = { name = nofactions.2.option }
 }
 
+country_event = {
+	id = nofactions.3
+	title = nofactions.3.title
+	desc = nofactions.3.desc
+	picture = nofactions
+	
+	is_triggered_only = yes
+	
+	# Option 1: Dismantle Allies
+	option = {
+		name = nofactions.3.a
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = ENG }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 2: Dismantle Axis
+	option = {
+		name = nofactions.3.b
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = GER }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 3: Dismantle Comintern
+	option = {
+		name = nofactions.3.c
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = SOV }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 4: Trigger next selection window
+	option = {
+		name = nofactions.3.d
+		hidden_effect = { country_event = { id = nofactions.4 } }
+	}
+}
+
+country_event = {
+	id = nofactions.4
+	title = nofactions.4.title
+	desc = nofactions.4.desc
+	picture = nofactions
+	
+	is_triggered_only = yes
+	
+	# Option 1: Dismantle Allies and Axis
+	option = {
+		name = nofactions.4.a
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = ENG }
+						dismantle_faction = yes
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = { tag = GER }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 2: Dismantle Allies and Comintern
+	option = {
+		name = nofactions.4.b
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = ENG }
+						dismantle_faction = yes
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = { tag = SOV }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 3: Dismantle Axis and Comintern
+	option = {
+		name = nofactions.4.c
+		
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = { tag = GER }
+						dismantle_faction = yes
+				}
+			}
+
+			every_country = {
+				if = {
+					limit = { tag = SOV }
+						dismantle_faction = yes
+				}
+			}
+		}
+	}
+	
+	# Option 4: Go back to main menu
+	option = {
+		name = nofactions.4.d
+		hidden_effect = { country_event = { id = nofactions.1 } }
+	}
+}
