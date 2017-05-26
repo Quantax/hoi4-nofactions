@@ -1,12 +1,12 @@
-Factions no more! Or just remove starting factions. Compatible with total conversions.
+Factions no more! Compatible with total conversions.
 
-[b]Update 8 allows you the choose whether to disable all or just dismantle starting factions.[/b]
+[b]Update 9 allows selective dismantling of the vanilla starting factions (Allies, Axis and/or Comintern).[/b]
 
-This mod removes all starting factions on game start and you can disable all further faction creation. You'll get a pop-up asking you to choose when you start a new game.
+This mod removes all starting factions on game start and you can disable all further faction creation. You'll get a pop-up asking you to choose your options when you start a new game.
 
-If you choose to disable all factions, they can still be created from focuses and events but [u]they will be dismantled the next day[/u]. I know this not a perfect solution but, thanks to Paradox's inconsistent way of handling on_action triggers, it's currently the best way to achieve maximum compatibility with other mods. Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen. However, all war participants will capitulate separately since there is no faction to host GIEs (goverment-in-exile).
+If you choose to disable all factions, they can still be created from focuses and events but [u]they will be dismantled the next day[/u]. I know this not a perfect solution but it is currently the best way to achieve maximum compatibility with other mods. Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen. However, all war participants will capitulate separately since there is no faction to host GIEs (goverment-in-exile).
 
-Game mechanics, focuses, events and other things that rely on factions (being a member, being a leader, etc.) are essentially non-functional if you disable factions. I might later make an addon mod which rebalances and 'fixes' aforementioned things in vanilla.
+Game mechanics, focuses, events and other things that rely on factions (being a member, being a leader, etc.) are essentially non-functional if you disable factions.
 
 
 ---
@@ -15,6 +15,7 @@ Game mechanics, focuses, events and other things that rely on factions (being a 
  - Removes starting factions.
  - Prevents faction creation through diplomacy.
  - Dismantles ALL factions that are created from events, focuses and other means.
+ - Option to selectively dismantle vanilla starting factions (Axis, Allies and/or Comintern).
 
 ---
 
@@ -24,6 +25,7 @@ Game mechanics, focuses, events and other things that rely on factions (being a 
 ---
 
 [h1]Updates:[/h1]
+ - Update 9: Added ability to selectively dismantle vanilla starting factions, fixed mod texts for languages other English.
  - Update 8: Added ability to choose whether to disable all or just dismantle starting factions.
  - Update 7: MAJOR rework of the mod, now compatible with a lot more other mods. Updated to HOI 1.3.3.
 
