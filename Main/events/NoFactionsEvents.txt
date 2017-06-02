@@ -97,11 +97,8 @@ country_event = {
 		name = nofactions.3.a
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = ENG }
-						dismantle_faction = yes
-				}
+			ENG = {
+				dismantle_faction = yes
 			}
 		}
 	}
@@ -111,11 +108,8 @@ country_event = {
 		name = nofactions.3.b
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = GER }
-						dismantle_faction = yes
-				}
+			GER = {
+				dismantle_faction = yes
 			}
 		}
 	}
@@ -125,11 +119,8 @@ country_event = {
 		name = nofactions.3.c
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = SOV }
-						dismantle_faction = yes
-				}
+			SOV = {
+				dismantle_faction = yes
 			}
 		}
 	}
@@ -154,18 +145,12 @@ country_event = {
 		name = nofactions.4.a
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = ENG }
-						dismantle_faction = yes
-				}
+			ENG = {
+				dismantle_faction = yes
 			}
 
-			every_country = {
-				if = {
-					limit = { tag = GER }
-						dismantle_faction = yes
-				}
+			GER = {
+				dismantle_faction = yes
 			}
 		}
 	}
@@ -175,18 +160,12 @@ country_event = {
 		name = nofactions.4.b
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = ENG }
-						dismantle_faction = yes
-				}
+			ENG = {
+				dismantle_faction = yes
 			}
 
-			every_country = {
-				if = {
-					limit = { tag = SOV }
-						dismantle_faction = yes
-				}
+			SOV = {
+				dismantle_faction = yes
 			}
 		}
 	}
@@ -196,18 +175,12 @@ country_event = {
 		name = nofactions.4.c
 		
 		hidden_effect = {
-			every_country = {
-				if = {
-					limit = { tag = GER }
-						dismantle_faction = yes
-				}
+			GER = {
+				dismantle_faction = yes
 			}
 
-			every_country = {
-				if = {
-					limit = { tag = SOV }
-						dismantle_faction = yes
-				}
+			SOV = {
+				dismantle_faction = yes
 			}
 		}
 	}
