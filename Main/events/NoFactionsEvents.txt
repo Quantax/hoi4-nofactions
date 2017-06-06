@@ -5,7 +5,7 @@ country_event = {
 	id = nofactions.1
 	title = nofactions.1.title
 	desc = nofactions.1.desc
-	picture = nofactions
+	picture = GFX_NoFactions_event
 	
 #	fire_only_once = yes
 	is_triggered_only = yes
@@ -16,7 +16,6 @@ country_event = {
 		hidden_effect = {
 			# Loop through every country
 			every_country = {
-			
 				# Remove existing factions
 				dismantle_faction = yes
 			}
@@ -39,7 +38,6 @@ country_event = {
 		hidden_effect = {
 			# Loop through every country
 			every_country = {
-			
 				# Remove existing factions
 				dismantle_faction = yes
 				
@@ -62,7 +60,7 @@ country_event = {
 	id = nofactions.2
 	title = nofactions.2.title
 	desc = nofactions.2.desc
-	picture = nofactions
+	picture = GFX_NoFactions_event
 	
 	# The event fires daily
 	#is_triggered_only = yes
@@ -88,41 +86,26 @@ country_event = {
 	id = nofactions.3
 	title = nofactions.3.title
 	desc = nofactions.3.desc
-	picture = nofactions
+	picture = GFX_NoFactions_event
 	
 	is_triggered_only = yes
 	
 	# Option 1: Dismantle Allies
 	option = {
 		name = nofactions.3.a
-		
-		hidden_effect = {
-			ENG = {
-				dismantle_faction = yes
-			}
-		}
+		hidden_effect = { ENG = { dismantle_faction = yes } }
 	}
 	
 	# Option 2: Dismantle Axis
 	option = {
 		name = nofactions.3.b
-		
-		hidden_effect = {
-			GER = {
-				dismantle_faction = yes
-			}
-		}
+		hidden_effect = { GER = { dismantle_faction = yes } }
 	}
 	
 	# Option 3: Dismantle Comintern
 	option = {
-		name = nofactions.3.c
-		
-		hidden_effect = {
-			SOV = {
-				dismantle_faction = yes
-			}
-		}
+		name = nofactions.3.c		
+		hidden_effect = { SOV = { dismantle_faction = yes } }
 	}
 	
 	# Option 4: Trigger next selection window
@@ -136,52 +119,34 @@ country_event = {
 	id = nofactions.4
 	title = nofactions.4.title
 	desc = nofactions.4.desc
-	picture = nofactions
+	picture = GFX_NoFactions_event
 	
 	is_triggered_only = yes
 	
 	# Option 1: Dismantle Allies and Axis
 	option = {
 		name = nofactions.4.a
-		
 		hidden_effect = {
-			ENG = {
-				dismantle_faction = yes
-			}
-
-			GER = {
-				dismantle_faction = yes
-			}
+			ENG = { dismantle_faction = yes }
+			GER = { dismantle_faction = yes }
 		}
 	}
 	
 	# Option 2: Dismantle Allies and Comintern
 	option = {
 		name = nofactions.4.b
-		
 		hidden_effect = {
-			ENG = {
-				dismantle_faction = yes
-			}
-
-			SOV = {
-				dismantle_faction = yes
-			}
+			ENG = { dismantle_faction = yes }
+			SOV = { dismantle_faction = yes }
 		}
 	}
 	
 	# Option 3: Dismantle Axis and Comintern
 	option = {
 		name = nofactions.4.c
-		
 		hidden_effect = {
-			GER = {
-				dismantle_faction = yes
-			}
-
-			SOV = {
-				dismantle_faction = yes
-			}
+			GER = { dismantle_faction = yes }
+			SOV = { dismantle_faction = yes }
 		}
 	}
 	

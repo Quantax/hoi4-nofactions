@@ -1,10 +1,11 @@
 # On startup, trigger the dialogue for human player only
 on_actions = {
-	on_startup = {	
+	on_startup = {
 		effect = {
 			every_country = {
 				limit = { is_ai = no }
 					country_event = nofactions.1
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@ Factions no more! Compatible with total conversions.
 
 [b]Update 9 allows selective dismantling of the vanilla starting factions (Allies, Axis and/or Comintern).[/b]
 
-This mod removes all starting factions on game start and you can disable all further faction creation. You'll get a pop-up asking you to choose your options when you start a new game.
+This mod dismantles starting factions (all or chosen vanilla factions) in the beginning of a game and you can also disable all further faction creation. You'll get a pop-up asking you to choose your options when you start a new game.
 
 If you choose to disable all factions, they can still be created from focuses and events but [u]they will be dismantled the next day[/u]. I know this not a perfect solution but it is currently the best way to achieve maximum compatibility with other mods. Due to this small delay between creation and dismantling, things such as "faction created -> war declared -> faction dismantled -> still at war with the former faction members" might happen. However, all war participants will capitulate separately since there is no faction to host GIEs (goverment-in-exile).
 
@@ -20,11 +20,12 @@ Game mechanics, focuses, events and other things that rely on factions (being a 
 ---
 
 [h1]Known issues:[/h1]
- - Game mechanics, focuses and other things that rely factions are essentially non-functional.
+ - Game mechanics, focuses and other things that rely on factions will become essentially non-functional.
 
 ---
 
 [h1]Updates:[/h1]
+ - Update 10: Updated to HOI 1.4
  - Update 9: Added ability to selectively dismantle vanilla starting factions, fixed mod texts for languages other English.
  - Update 8: Added ability to choose whether to disable all or just dismantle starting factions.
  - Update 7: MAJOR rework of the mod, now compatible with a lot more other mods. Updated to HOI 1.3.3.
@@ -33,3 +34,4 @@ Game mechanics, focuses, events and other things that rely on factions (being a 
 
 [h1]Mod compatibility:[/h1]
  - Basic compatibility with just about anything but strange things / balance issues might happen when you remove factions.
+ - Works with total conversions such as Kaiserreich, Millenium Dawn and others.
